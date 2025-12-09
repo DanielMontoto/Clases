@@ -1,0 +1,149 @@
+/* RESETEO BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* CABECERA */
+#cabecera {
+    background: #add0f5;
+    padding: 20px;
+}
+
+.menu_horizontal {
+    margin-left: 250px;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu_horizontal a {
+    background: #4c8be2;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #2d5fa4;
+}
+
+.menu_horizontal a:hover {
+    background: #6ea8ff;
+}
+
+/* CUERPO */
+#cuerpo {
+    display: flex;
+    background: #7ac3f3;
+    padding: 20px;
+    padding-bottom: -20px;
+    min-height: 600px;
+}
+
+/* MENÚ VERTICAL */
+#menu_vertical {
+    width: 200px;
+}
+
+#menu_vertical ul {
+    list-style: none;
+}
+
+#menu_vertical li {
+    margin-bottom: 10px;
+}
+
+#menu_vertical .icono {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+#menu_vertical a {
+    display: block;
+    background: #4c8be2;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #2d5fa4;
+}
+
+#menu_vertical a:hover {
+    background: #6ea8ff;
+}
+
+/* CONTENEDOR DERECHA */
+#contenedor_derecha {
+    flex: 1;
+    padding-left: 20px;
+}
+
+/* TABLA */
+#tabla {
+    margin-top: -20px;
+    background: #f7d4ac;
+    padding: 50px;
+    margin-bottom: 0px;
+}
+
+#tabla .titulo {
+    text-align: center;
+    margin-bottom: 10px;
+    font-style: italic;
+     color: #ca8852;
+}
+
+table {
+    margin-left: 250px;
+    width: 50%;
+    border: 2px dashed #cc9a70;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 2px dashed #cc9a70;
+    color: #ca8852;
+    padding: 8px;
+    text-align: center;
+}
+
+/* FORMULARIO */
+#formulario_tabla fieldset {
+    margin-left: 250px;
+    width: 60%;
+    border: 2px dashed #cc9a70;
+    padding: 15px;
+    
+}
+/*background: #da6f93;*/
+
+#formulario_tabla legend {
+    
+    color: #cc9a70;
+    font-weight: bold;
+}
+
+#formulario_tabla label {
+    
+    display: block;
+    margin-top: 10px;
+}
+
+#formulario_tabla input,
+#formulario_tabla select {
+    width: 25%;
+    padding: 5px;
+    margin-top: 3px;
+    border: 1px solid #8a4a68;
+    background: #f3c8dc;
+}
+
+#formulario_tabla input:focus,
+#formulario_tabla select:focus {
+    outline: none;
+    background: white;
+    border-color: #ff6fa8;
+}

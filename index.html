@@ -1,23 +1,88 @@
-<html>
-    <head>
-        <h1>
-            Esta es la primera página de tablas.
-        </h1>
-    </head>
-    <body>
-        <table border="20" bordercolor="red" bgcolor="pink">
-            <tr>
-                <td background="/home/alumnotv/tabla/imagenes/123.jpeg" colspan="2">Fila 1 columna 1</td>
-                <td>Fila 2 columna 2</td>
-            </tr>
-            <tr>
-                <td rowspan="2">Fila 2 columna 1</td>
-                <td>Fila 2 columna 2</td>
-            </tr>
-            <tr>
-                <td>Fila 3 columna 1</td>
-                <td>Fila 3 columna 2</td>
-            </tr>
-        </table>
-    </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica HTML + CSS</title>
+    <link rel="stylesheet" href="stilos.css">
+</head>
+<body>
+
+    <!-- CABECERA -->
+    <div id="cabecera">
+        <ul class="menu_horizontal">
+            <li><a href="#">Elemento 1</a></li>
+            <li><a href="#">Elemento 2</a></li>
+            <li><a href="#">Elemento 3</a></li>
+            <li><a href="#">Elemento 4</a></li>
+            <li><a href="#">Elemento 5</a></li>
+            <li><a href="#">Elemento 6</a></li>
+        </ul>
+    </div>
+
+    <!-- CUERPO GENERAL -->
+    <div id="cuerpo">
+
+        <!-- MENÚ VERTICAL -->
+        <div id="menu_vertical">
+            <ul>
+                <li><a href="#"><img src="flecha_activa.png" class="icono">Elemento 1</a></li>
+                <li><a href="#"><img src="flecha_activa.png" class="icono">Elemento 2</a></li>
+                <li><a href="#"><img src="flecha_activa.png" class="icono">Elemento 3</a></li>
+                <li><a href="#"><img src="flecha_activa.png" class="icono">Elemento 4</a></li>
+                <li><a href="#"><img src="flecha_activa.png" class="icono">Elemento 5</a></li>
+                <li><a href="#"><img src="flecha_activa.png" class="icono">Elemento 6</a></li>
+            </ul>
+        </div>
+
+        <!-- CONTENEDOR TABLA + FORMULARIO -->
+        <div id="contenedor_derecha">
+
+            <!-- TABLA -->
+            <div id="tabla">
+                <table>
+                    <tr>
+                        <th>Elemento 1</th>
+                        <th>Elemento 2</th>
+                        <th>Elemento 3</th>
+                    </tr>
+                    <tr>
+                        <td>Elemento 1</td>
+                        <td>Elemento 2</td>
+                        <td>Elemento 3</td>
+                    </tr>
+                    <tr>
+                        <td>Elemento 1</td>
+                        <td>Elemento 2</td>
+                        <td>Elemento 3</td>
+                    </tr>
+                </table>
+                <p class="titulo">Tabla de prueba</p>
+            </div>
+
+            <!-- FORMULARIO -->
+            <div id="formulario_tabla" style="background: #da6f93; padding-bottom: 100px; padding-top: 20px;">
+                <form>
+                    <fieldset>
+                        <legend>Formulario</legend>
+
+                        <label>Nombre:</label>
+                        <input type="text">
+
+                        <label>Apellidos:</label>
+                        <input type="text">
+
+                        <label>Género:</label>
+                        <select style="width: 8%;">
+                            <option>SMR</option>
+                        </select>
+
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
 </html>
